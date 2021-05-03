@@ -1,0 +1,16 @@
+
+extends layout
+
+block content
+  header
+    div(class="index-header")
+      h1= title
+      a(href="/new" class="new-message") Add
+  main
+    ul
+      each msg in messages
+        li(class="list")
+          div(class="comment")
+            h2 #{msg.user}
+            p #{format(msg.added, {addSuffix: true})}
+          p #{msg.text}

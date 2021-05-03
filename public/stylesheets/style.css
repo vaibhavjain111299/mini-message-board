@@ -1,0 +1,127 @@
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: deepskyblue;
+}
+
+
+.index-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid deepskyblue;
+}
+
+h1 {
+  color: #31a1b0;
+}
+
+ul {
+  list-style: none;
+}
+
+.list {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 0.25rem 2rem;
+  margin: 1rem 0rem;
+  transition: 0.2s;
+}
+
+.list:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+.new-message {
+  border-radius: 4px;
+  background: deepskyblue;
+  color: white;
+  text-decoration: none;
+  padding: 4px 20px;
+  font-weight: bold;
+  transition: 0.2s;
+  border: 2px solid deepskyblue;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01);
+}
+
+.new-message:hover {
+  background: transparent;
+  color: deepskyblue;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+}
+
+/************* form.pug ************/
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid deepskyblue;
+}
+
+.cancel {
+  border-radius: 4px;
+  background: #e44e58;
+  color: white;
+  text-decoration: none;
+  padding: 4px 20px;
+  font-weight: bold;
+  transition: 0.2s;
+  border: 2px solid #e44e58;
+}
+
+.cancel:hover {
+  background: transparent;
+  color: #e44e58;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.form {
+  padding: 0 2rem;
+  margin-top: 1.5rem;
+}
+
+input {
+  outline: none;
+  margin: 0.5rem 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  transition: 0.2s ease;
+}
+
+input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+input:focus {
+  color: #4b515d;
+  border: 1px solid #b8b6b6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01),
+    0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+#submit {
+  outline: none;
+  border: 2px solid deepskyblue;
+  border-radius: 4px;
+  background: transparent;
+  padding: 6px 24px;
+  width: 190px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  transition: 0.3s ease;
+  background: deepskyblue;
+  color: white;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01);
+}

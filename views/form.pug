@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    header
+      div(class="form-header")
+        h1= "New Message"
+        a(href="/" class="cancel") cancel
+      main
+    main
+      form(method="POST" action="/new" class="form")
+        label(for="username")= "Username:"
+        br
+        input(type="text", placeholder="Username", name="username" id="username" required)
+        br
+        label(for="message")= "Message:"
+        br
+        input(type="text", placeholder="Your message", name="message", id="message" required)
+        br
+        input(type="submit" name="submit" id="submit")
